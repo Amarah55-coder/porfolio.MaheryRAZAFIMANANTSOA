@@ -146,16 +146,20 @@
                                 }
                             }
                             .tab-contents{
+                                display: none;
                                 ul{
                                     li{
                                         list-style: none;
                                         margin: 10px 0;
                                         span{
                                             color: rgb(228, 235, 16);
+                                            font-size: 1.25em;
                                         }
                                     }
                                 }
-
+                            }
+                            .tab-contents.active-tab{
+                                display: block;
                             }
                         }
                     }

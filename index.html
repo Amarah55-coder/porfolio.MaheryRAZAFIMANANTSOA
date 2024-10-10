@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,8 @@
             <nav>
                 <span class="logo"><span class="mahery">M</span>ah'rah.</span>
                 <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">A Propos</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -34,21 +34,34 @@
                         <img src="assets/images/Profil_Mahery-RAZAFIMANANTSOA.png" alt="Profil Mahery RAZAFIMANANTSOA">
                     </div>
                     <div class="about-col-2">
-                        <h2>About me</h2>
+                        <h2>A Propos</h2>
                         <p>
                             Salut! Je suis Mahery RAZAFIMANANTSOA, un passionné de technologie numérique en quête de devenir un administrateur réseau.
                             Actuellement étudiant chez Passerelles Numériques Madagascar, je me spécialise dans la protection des systèmes et des données contre les menaces numériques.
                         </p>
                         <ol class="tab-titles">
-                            <li class="tab-links active-link">Skills</li>
-                            <li class="tab-links">Experience</li>
-                            <li class="tab-links">Education</li>
+                            <li class="tab-links active-link" onclick="opentab('Competences')">Compétences</li>
+                            <li class="tab-links" onclick="opentab('Experience')">Experience</li>
+                            <li class="tab-links" onclick="opentab('Education')">Education</li>
                         </ol>
-                        <div class="tab-contents">
+                        <div class="tab-contents active-tab" id="Competences">
                             <ul>
                                 <li><span>UI/UX</span><br>Figma, WordPress, Framer</li>
                                 <li><span>Modeling 3D</span><br>Blender, Hand</li>
                                 <li><span>Bureautique</span><br>Excel, Word, Power Point</li>
+                            </ul>
+                        </div>   
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Vet Clinic</span><br>Stage de decouverte du métier d'administrateur réseau</li>
+                                <li><span>Billet de sortie</span><br>Réalisation d'un application Web pour Passerelles Numériques</li>
+                            </ul>
+                        </div>   
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Happy you</span><br>Certification en art auratoire</li>
+                                <li><span>OpenClassroom</span><br>Apprentissage en autodidacte du web</li>
+                                <li><span>CodeFreeCamp</span><br>Formation en webdesigner HTML & CSS et Js </li>
                             </ul>
                         </div>   
                     </div>
